@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+
+    <script> // Nesse aqui, eu fiz seguindo a resolução do senac, porém do meu jeito, de certa forma. Ainda restou algumas dúvidas sobre o if e o else. 
+
+        var arroz1, feijaop, arroz2, feijaob, len, lin, valor_da_compra, res
+
+        arroz1 = prompt ("Insira o preço do kilo do arroz tipo 1: ")
+        feijaop = prompt ("Insira o preço do kilo do feijão preto: ")
+        arroz2 = prompt ("Insira o preço do kilo do arroz tipo 2: ")
+        feijaob = prompt ("Insira o preço do kilo do feijão branco: ")
+        len = prompt ("Insira o preço do kilo da lentilha: ")
+        lin = prompt ("Insira o preço do kilo da linguiça: ")
+
+        res = prompt ("Tem arroz arroz tipo um ? Responda S para Sim e N para Não. Caso, não tenha nenhum dos dois, responda L de lentilha: ")
+
+        if ( res == 's'){
+            arroz1 = parseInt (arroz1)
+            feijaop = parseInt (feijaop)
+            valor_da_compra = arroz1+feijaop
+            alert ("Compre arroz tipo um e feijão preto. O valor total da compra é: " + valor_da_compra)
+        }
+
+        else if ( res == 'n'){
+            arroz2 = parseInt (arroz2)
+            feijaob = parseInt (feijaob)
+            valor_da_compra = arroz2+feijaob
+            alert ("Compre arroz tipo dois e feijão branco. O valor total da compra é: " + valor_da_compra)
+        }
+        else if ( res == 'l'){
+            lin = parseInt (lin)
+            len = parseInt (len)
+            valor_da_compra = lin+len
+            alert ("Compre lentinha e linguiça. O valor total da compra é: " + valor_da_compra)
+        }
+
+
+    </script>
+    
+</body>
+</html>
