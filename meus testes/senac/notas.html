@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    
+    <script> // quero deixar isso aqui mais bonitinho depois
+
+        var dis1
+        var dis2
+        var dis3
+        var dis4
+        var dis5
+
+        var disn1
+        var disn2
+        var disn3
+        var disn4
+        var disn5
+
+        var media
+
+        dis1 = prompt ("Insira aqui a disciplina que quer calcular a nota: ")
+        dis2 = prompt ("Insira aqui a disciplina que quer calcular a nota: ")
+        dis3 = prompt ("Insira aqui a disciplina que quer calcular a nota: ")
+        dis4 = prompt ("Insira aqui a disciplina que quer calcular a nota: ")
+        dis5 = prompt ("Insira aqui a disciplina que quer calcular a nota: ")
+
+        disn1 = prompt ("Insira a nota da disciplina " + dis1 + " : ")
+        disn2 = prompt ("Insira a nota da disciplina " + dis2 + " : ")
+        disn3 = prompt ("Insira a nota da disciplina " + dis3 + " : ")
+        disn4 = prompt ("Insira a nota da disciplina " + dis4 + " : ")
+        disn5 = prompt ("Insira a nota da disciplina " + dis5 + " : ")
+
+        disn1 = parseInt (disn1)
+        disn2 = parseInt (disn2)
+        disn3 = parseInt (disn3)
+        disn4 = parseInt (disn4)
+        disn5 = parseInt (disn5)
+
+        media = (disn1+disn2+disn3+disn4+disn5)/5 // Nesse caso, eu tenho que colocar a soma em paratênse e a divisão fora. Não estava conseguindo. Parece que esqueci nisso da escola rsrs
+        
+
+        if (media > 7){
+            alert ("Parabéns! Você passou. Sua média é: " + media)
+        }
+
+        else{
+            alert ("Poxa, que pena. Você não passou. Sua média é: " + media)
+        }
+
+
+
+    </script>
+
+</body>
+</html>

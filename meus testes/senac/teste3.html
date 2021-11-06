@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seila</title>
+</head>
+<body>
+
+    <script>
+        
+       var idade
+       cont =1 
+    
+         idade = prompt ("Insira sua idade: ")
+
+        while (idade <0 && cont <3){
+            idade = prompt ("Idade inválida. Insira novamente: ")
+            cont++
+        } // Nesse caso, eu estava colocando o cont fora do while e não esta dando certo. é importante lembrar, para mim rs, que o cont vai agregar sempre quando a verificação repetir. Logo, ele faz parte dela!
+        
+        
+        if (cont <3){
+            alert ("Sua idade é " + idade)
+        }
+
+        else{
+            alert ("Você excedeu o número de tentativas.")
+        }
+
+
+    </script>
+    
+</body>
+</html>

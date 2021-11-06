@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha-Senac</title>
+</head>
+<body>
+
+    <script>
+
+        var Senha
+        var repete
+        var s 
+
+        do {
+            senha = prompt ("Insira sua senha número de 6 dígitos: ")
+        }
+
+        while (senha.length!=6) // O simbolto != significa DIFERENTE. Aqui, tem que retornar true. 
+        
+        repete = prompt ("Redigite sua senha para validação. Ela deve ser a mesma: ") //Esse prompt, não faz parte do while acima. Apenas ocorrerá ele, quando a verificação de cima for procedente.
+
+        while (repete!=senha){
+            repete = prompt ("A senha não é a mesma. Insira novamente a senha para validação: ") // Nessa etapa, será verificado se o as senhas são diferentes. Caso sim, será atribuído uma nova entrada para o prompt e a senha deve ser redigitada
+        }
+
+        s = prompt ("Para acessar sua conta entre com a sua senha: ")
+
+        for (var cont=1; senha!=s && cont <3; cont++){ //estudar melhor contadores
+            alert ("A senha informada não confere. Insira novamente. Você tem mais" + (3-cont) + " tentativa(s).")
+            s = prompt ("Para acessar sua conta entre com sua senha: ") // Aqui pede para colocar a senha novamente, caso esse for der true
+        }
+
+        if (cont <3){  // Aqui vai ser tomada decisões
+            alert ("Sua senha está correta! Você pode acessar sua conta. ")
+        }
+
+        else {
+            senha = 99;
+            alert ("Sua senha foi bloqueada. Procure seu gerente. ")
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
